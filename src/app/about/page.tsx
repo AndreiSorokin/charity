@@ -1,15 +1,16 @@
-import FadeInSection from '@/components/FadeInSection'
-import React from 'react'
+import FadeInSection from "@/components/FadeInSection";
 
-export default function page() {
+export default function AboutPage() {
   return (
-    <main className="p-8">
+    <section className="h-screen flex items-center justify-center">
       <FadeInSection>
-        <h1 className="text-3xl font-bold">About Us</h1>
-        <p className="mt-2 text-gray-700">
-          We are a team dedicated to building great websites.
-        </p>
+        <div className="max-w-xl text-center">
+          <h2 className="text-3xl font-bold">About Us</h2>
+          <p className="mt-2 text-gray-700">
+            We build fast, modern, SEO-friendly websites using Next.js.
+          </p>
+        </div>
       </FadeInSection>
-    </main>
-  )
+    </section>
+  );
 }

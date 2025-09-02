@@ -4,10 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -19,15 +19,13 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full bg-white shadow z-50"
     >
       <ul className="flex justify-center gap-8 py-4">
-        {navLinks.map((link, idx) => (
+        {navLinks.map((link) => (
           <motion.li
             key={link.href}
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <Link href={link.href} scroll={false}>
-              {link.name}
-            </Link>
+            <Link href={link.href}>{link.name}</Link>
           </motion.li>
         ))}
       </ul>
