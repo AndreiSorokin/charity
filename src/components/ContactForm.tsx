@@ -45,6 +45,13 @@ export default function ContactForm() {
         required
         className="border p-2 rounded"
       />
+      <input
+        type="phone"
+        name="phone"
+        placeholder="Your phone number"
+        required
+        className="border p-2 rounded"
+      />
       <textarea
         name="message"
         placeholder="Your Message"

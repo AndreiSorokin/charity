@@ -10,6 +10,8 @@ export default function AboutPage() {
             We build fast, modern, SEO-friendly websites using Next.js.
           </p>
         </div>
+        <div className="w-40 h-20 bg-red-500">Red</div>
+        <div className="w-40 h-20 bg-mint-dark">Mint Dark</div>
       </FadeInSection>
     </section>
   );
