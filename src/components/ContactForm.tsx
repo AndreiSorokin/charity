@@ -46,10 +46,11 @@ export default function ContactForm() {
         className="border p-2 rounded"
       />
       <input
-        type="phone"
+        type="tel"
         name="phone"
         placeholder="Your phone number"
         required
+        pattern="[0-9]{10}"
         className="border p-2 rounded"
       />
       <textarea

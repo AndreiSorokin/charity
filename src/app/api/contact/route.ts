@@ -24,7 +24,17 @@ const transporter = nodemailer.createTransport({
       from: email,
       to: process.env.EMAIL_USER,
       subject: `New contact form submission from ${name}`,
-      text: message,
+      text:
+        `
+          You have a new contact form submission:
+
+          Name: ${name}
+          Email: ${email}
+          Phone: ${phone}
+
+          Message:
+          ${message}
+        `,
     });
 
     return NextResponse.json({ message: "Email sent successfully" }, { status: 200 });

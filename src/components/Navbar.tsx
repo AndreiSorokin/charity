@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold">
-          MyWebsite
+          Aputupa
         </Link>
 
         {/* Desktop Menu */}
